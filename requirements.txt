@@ -1,0 +1,14 @@
+# 第三方库（没有固定版本号；用 conda 环境 medrag 运行）。
+# 其余用到的都是 Python 标准库。Ollama 是单独安装的程序，不在这里。
+requests              # 00 下载论文
+lxml                  # 01、06、07、08 解析 XML
+pandas                # 数据表读写
+pyarrow               # 08、09 读写 parquet（pandas 需要）
+numpy
+transformers          # 04、07、08、12、14 tokenizer 和重排序模型
+torch                 # 09、12 向量化和重排序（Mac 上用 MPS）
+sentence-transformers # 09、10 嵌入模型
+chromadb              # 09 起 向量库
+rank_bm25             # 11 关键词检索
+langchain-text-splitters  # 04、08 分块
+rouge                 # 23、26 答案评估的 ROUGE
